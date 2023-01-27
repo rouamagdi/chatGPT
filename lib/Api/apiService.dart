@@ -2,13 +2,13 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
-String api = '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';
+String apiToken = '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';
 
 class ApiService {
   String baseUrl = "https://api.openai.com/v1/completions";
   Map<String, String> header = {
     'Content-Type': 'application/json',
-    'Authorization': 'Bearer $api',
+    'Authorization': 'Bearer $apiToken',
   };
 
   sendQuestion(String message) async {
